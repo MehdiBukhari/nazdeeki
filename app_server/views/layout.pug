@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, inital-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/all.min.css')
+
+  body
+  nav.navbar.fixed-top.navbar-expand-md
+    .container
+      a.navbar-brand(href='/') Nazdeeki
+        button.navbar-toggler.navbar-toggler-left(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+      #navbarMain.navbar-collapse.collapse
+         ul.navbar-nav.mr-auto
+            li.nav-item
+             a.nav-link(href='/about/') About
+
+  .container.content
+    block content
+    
+  footer
+    .row
+      .col-12
+         small &copy; Mehdi Bukhari mmmmbukhari@gmail.com
+  
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper-utils.js"></script>
+    script(src='/javascripts/bootstrap.min.js')
